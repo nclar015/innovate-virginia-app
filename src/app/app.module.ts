@@ -9,6 +9,10 @@ import { HomePage } from '../pages/home/home';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SessionsPage } from '../pages/sessions/sessions';
 import { RoomsPage } from '../pages/rooms/rooms';
+import { SpeakersPage } from '../pages/speakers/speakers';
+import { SocialPage } from '../pages/social/social';
+import { LocationPage } from '../pages/location/location';
+import { SponsorsPage } from '../pages/sponsors/sponsors';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,6 +26,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SchedulePage,
     SessionsPage,
     RoomsPage,
+    LocationPage,
+    SponsorsPage,
+    SpeakersPage,
+    SocialPage,
     HomePage,
     TabsPage
   ],
@@ -37,6 +45,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SchedulePage,
     SessionsPage,
     RoomsPage,
+    LocationPage,
+    SponsorsPage,
+    SpeakersPage,
+    SocialPage,
     HomePage,
     TabsPage
   ],
