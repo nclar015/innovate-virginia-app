@@ -25200,13 +25200,7 @@ ion-navbar.toolbar {
 }
 
 body {
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-ion-app.ios [padding],
-ion-app.ios [padding] .scroll-content {
-  padding: 0;
 }
 
 .blue-header {
@@ -25225,8 +25219,16 @@ h1 {
   color: #fff;
   font-size: 22px;
   line-height: 60px;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+h2 {
+  color: #1b4c8c;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
 }
 
 h3 {
@@ -25248,6 +25250,28 @@ a {
   text-align: center;
 }
 
+.item-ios h2 {
+  margin: 0 0 2px;
+  line-height: 2rem;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.tabs-ios .tab-button-icon {
+  margin-top: 0;
+  margin-bottom: 0px;
+  min-width: 35px;
+  height: 35px;
+  font-size: 30px;
+  color: #8c8c8c;
+}
+
+.tabs-ios .tab-button-text {
+  margin-top: 0;
+  margin-bottom: 5px;
+  min-height: 10px;
+}
+
 .home-content {
   text-align: center;
 }
@@ -25257,6 +25281,8 @@ a {
   padding: 20px 0;
   margin: 0;
   display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .home-icon img {
@@ -25264,4 +25290,30 @@ a {
   display: block;
   margin: auto;
   padding: 14px 0;
+}
+
+ion-icon {
+  font-size: 6em;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+ion-content {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.facebookIcon {
+  color: #3b5998;
+}
+
+.twitterIcon {
+  color: #0084b4;
+}
+
+.instagramIcon {
+  color: #fccc63;
 }

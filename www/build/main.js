@@ -45725,7 +45725,7 @@ var RoomsPage = (function () {
 }());
 RoomsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-rooms',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/rooms/rooms.html"*/'<ion-content>\n    Rooms\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/rooms/rooms.html"*/
+        selector: 'page-rooms',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/rooms/rooms.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Rooms\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/rooms/rooms.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], RoomsPage);
@@ -45759,7 +45759,7 @@ var SchedulePage = (function () {
 }());
 SchedulePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-schedule',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/'<ion-content>\n    Schedule\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/
+        selector: 'page-schedule',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Schedule\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SchedulePage);
@@ -45793,7 +45793,7 @@ var SessionsPage = (function () {
 }());
 SessionsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-sessions',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sessions/sessions.html"*/'<ion-content>\n    Sessions\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sessions/sessions.html"*/
+        selector: 'page-sessions',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sessions/sessions.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Sessions\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sessions/sessions.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SessionsPage);
@@ -56468,7 +56468,15 @@ webpackEmptyAsyncContext.id = 101;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sessions_sessions__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sessions_sessions__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__survey_survey__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__rooms_rooms__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__speakers_speakers__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__social_social__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__location_location__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__sponsors_sponsors__ = __webpack_require__(205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56481,16 +56489,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
+
+
+
+
+
 var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.sessionsRoot = __WEBPACK_IMPORTED_MODULE_2__sessions_sessions__["a" /* SessionsPage */];
+        this.sessionsRoot = __WEBPACK_IMPORTED_MODULE_4__sessions_sessions__["a" /* SessionsPage */];
+        this.speakersRoot = __WEBPACK_IMPORTED_MODULE_7__speakers_speakers__["a" /* SpeakersPage */];
+        this.surveyRoot = __WEBPACK_IMPORTED_MODULE_5__survey_survey__["a" /* SurveyPage */];
+        this.locationRoot = __WEBPACK_IMPORTED_MODULE_9__location_location__["a" /* LocationPage */];
+        this.roomsRoot = __WEBPACK_IMPORTED_MODULE_6__rooms_rooms__["a" /* RoomsPage */];
+        this.sponsorsRoot = __WEBPACK_IMPORTED_MODULE_10__sponsors_sponsors__["a" /* SponsorsPage */];
+        this.socialRoot = __WEBPACK_IMPORTED_MODULE_8__social_social__["a" /* SocialPage */];
+        this.aboutRoot = __WEBPACK_IMPORTED_MODULE_2__about_about__["a" /* AboutPage */];
+        this.contactRoot = __WEBPACK_IMPORTED_MODULE_3__contact_contact__["a" /* ContactPage */];
     }
+    HomePage.prototype.goToAnotherPage = function (pageName) {
+        this.navCtrl.push(pageName);
+    };
     return HomePage;
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/home/home.html"*/'<ion-content padding>\n    <div class="logo-header">\n        <img src="/assets/Logo/IVALogo.png" />\n    </div>\n    <div class="blue-header">\n        <h1>\n            2018 Conference\n        </h1>\n    </div>\n    <div class="home-content">\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Training-80.png" />\n                <h3>Sessions</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Schedule-80.png" />\n                <h3>My Schedule</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Podium With Speaker-80.png" />\n                <h3>Speakers</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Location-80.png" />\n                <h3>Location</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Waypoint Map-80.png" />\n                <h3>Room Map</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Business-80.png" />\n                <h3>Sponsors</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Facebook-100.png" />\n                <h3>Social Media</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-About-100.png" />\n                <h3>About</h3>\n            </a>\n        </div>\n        <div class="home-icon">\n            <a>\n                <img src="/assets/HomePageIcons/icons8-Phone-80.png" />\n                <h3>Contact</h3>\n            </a>\n        </div>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/home/home.html"*/'<ion-content>\n    <div class="logo-header">\n        <img src="/assets/Logo/IVALogo.png" />\n    </div>\n    <div class="blue-header">\n        <h1>\n            2018 Conference\n        </h1>\n    </div>\n    <div class="home-content">\n        <ion-card class="home-icon" (click)="goToAnotherPage(sessionsRoot)">\n            <img src="/assets/HomePageIcons/icons8-Training-80.png" />\n            <h3>Sessions</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(speakersRoot)">\n            <img src="/assets/HomePageIcons/icons8-Podium With Speaker-80.png" />\n            <h3>Speakers</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(surveyRoot)">\n            <img src="/assets/HomePageIcons/icons8-Survey-80.png" />\n            <h3>Survey</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(locationRoot)">\n            <img src="/assets/HomePageIcons/icons8-Location-80.png" />\n            <h3>Location</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(roomsRoot)">\n            <img src="/assets/HomePageIcons/icons8-Waypoint Map-80.png" />\n            <h3>Room Map</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(sponsorsRoot)">\n            <img src="/assets/HomePageIcons/icons8-Business-80.png" />\n            <h3>Sponsors</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(socialRoot)">\n            <img src="/assets/HomePageIcons/icons8-Facebook-100.png" />\n            <h3>Social Media</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(aboutRoot)">\n            <img src="/assets/HomePageIcons/icons8-About-100.png" />\n            <h3>About</h3>\n        </ion-card>\n        <ion-card class="home-icon" (click)="goToAnotherPage(contactRoot)">\n            <img src="/assets/HomePageIcons/icons8-Phone-80.png" />\n            <h3>Contact</h3>\n        </ion-card>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object])
 ], HomePage);
@@ -56505,10 +56532,9 @@ var _a;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sessions_sessions__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rooms_rooms__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__schedule_schedule__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_settings__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schedule_schedule__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56522,18 +56548,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var TabsPage = (function () {
     function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__sessions_sessions__["a" /* SessionsPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__rooms_rooms__["a" /* RoomsPage */];
-        this.tab4Root = __WEBPACK_IMPORTED_MODULE_3__schedule_schedule__["a" /* SchedulePage */];
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__schedule_schedule__["a" /* SchedulePage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_1__settings_settings__["a" /* SettingsPage */];
     }
     return TabsPage;
 }());
 TabsPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="Sessions" tabIcon="easel"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="Room Map" tabIcon="map"></ion-tab>\n    <ion-tab [root]="tab4Root" tabTitle="My Schedule" tabIcon="calendar"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/tabs/tabs.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root" tabTitle="My Schedule" tabIcon="calendar"></ion-tab>\n    <ion-tab [root]="tab3Root" tabTitle="Settings" tabIcon="settings"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -74637,20 +74661,24 @@ webpackEmptyAsyncContext.id = 195;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_schedule_schedule__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sessions_sessions__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_rooms_rooms__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_speakers_speakers__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_social_social__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_location_location__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_sponsors_sponsors__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tabs_tabs__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_survey_survey__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_rooms_rooms__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_speakers_speakers__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_social_social__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_location_location__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_sponsors_sponsors__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_tabs_tabs__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_status_bar__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_splash_screen__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -74681,13 +74709,16 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_schedule_schedule__["a" /* SchedulePage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_sessions_sessions__["a" /* SessionsPage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_rooms_rooms__["a" /* RoomsPage */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_location_location__["a" /* LocationPage */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_sponsors_sponsors__["a" /* SponsorsPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_speakers_speakers__["a" /* SpeakersPage */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_social_social__["a" /* SocialPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_survey_survey__["a" /* SurveyPage */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_rooms_rooms__["a" /* RoomsPage */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_location_location__["a" /* LocationPage */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_sponsors_sponsors__["a" /* SponsorsPage */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_speakers_speakers__["a" /* SpeakersPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__["a" /* SettingsPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_survey_survey__["a" /* SurveyPage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_social_social__["a" /* SocialPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_tabs_tabs__["a" /* TabsPage */]
+            __WEBPACK_IMPORTED_MODULE_16__pages_tabs_tabs__["a" /* TabsPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -74700,17 +74731,20 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_schedule_schedule__["a" /* SchedulePage */],
             __WEBPACK_IMPORTED_MODULE_8__pages_sessions_sessions__["a" /* SessionsPage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_rooms_rooms__["a" /* RoomsPage */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_location_location__["a" /* LocationPage */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_sponsors_sponsors__["a" /* SponsorsPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_speakers_speakers__["a" /* SpeakersPage */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_social_social__["a" /* SocialPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_survey_survey__["a" /* SurveyPage */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_rooms_rooms__["a" /* RoomsPage */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_location_location__["a" /* LocationPage */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_sponsors_sponsors__["a" /* SponsorsPage */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_speakers_speakers__["a" /* SpeakersPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_settings_settings__["a" /* SettingsPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_survey_survey__["a" /* SurveyPage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_social_social__["a" /* SocialPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_tabs_tabs__["a" /* TabsPage */]
+            __WEBPACK_IMPORTED_MODULE_16__pages_tabs_tabs__["a" /* TabsPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_17__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_18__ionic_native_splash_screen__["a" /* SplashScreen */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
         ]
     })
@@ -75023,7 +75057,7 @@ var ContactPage = (function () {
 }());
 ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/contact/contact.html"*/
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/contact/contact.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Contact\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n\n        <ion-item>\n            <ion-label floating>Name</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n\n        <ion-item>\n            <ion-label floating>Email</ion-label>\n            <ion-input type="mail"></ion-input>\n        </ion-item>\n\n        <ion-item>\n            <ion-label floating>Company</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n\n        <ion-item>\n            <ion-label floating>Comment</ion-label>\n            <ion-textarea></ion-textarea>\n        </ion-item>\n\n        <div padding>\n            <button ion-button color="primary" block>Submit</button>\n        </div>\n\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/contact/contact.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], ContactPage);
@@ -75057,7 +75091,7 @@ var LocationPage = (function () {
 }());
 LocationPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-location',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/location/location.html"*/'<ion-content>\n    Location\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/location/location.html"*/
+        selector: 'page-location',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/location/location.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Location\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/location/location.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], LocationPage);
@@ -75091,7 +75125,7 @@ var SocialPage = (function () {
 }());
 SocialPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-social',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/'<ion-content>\n    Social Media\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/
+        selector: 'page-social',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Social\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Social Media</ion-list-header>\n        <ion-item>\n            <ion-icon name="logo-twitter" item-left></ion-icon>\n            @agileRichmond\n        </ion-item>\n        <ion-item>\n            <ion-icon name="logo-facebook" item-left></ion-icon>\n            /AgileRichmond\n        </ion-item>\n    </ion-list>\n    <h2>follow us..</h2>\n    <ion-icon name="logo-facebook" class="facebookIcon"></ion-icon>\n    <ion-icon name="logo-twitter" class="twitterIcon"></ion-icon>\n    <ion-icon name="logo-instagram" class="instagramIcon"></ion-icon>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SocialPage);
@@ -75125,7 +75159,7 @@ var SpeakersPage = (function () {
 }());
 SpeakersPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-speakers',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/speakers/speakers.html"*/'<ion-content>\n    Speakers\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/speakers/speakers.html"*/
+        selector: 'page-speakers',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/speakers/speakers.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Speakers\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content class="outer-content">\n    <ion-list>\n        <ion-list-header>\n            Agile Transformation\n        </ion-list-header>\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot1.jpg">\n            </ion-avatar>\n            <h2>Finn</h2>\n            <h3>I\'m a big deal</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot2.jpg">\n            </ion-avatar>\n            <h2>Han</h2>\n            <h3>Look, kid...</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot4.jpg">\n            </ion-avatar>\n            <h2>Luke</h2>\n            <h3>Your thoughts betray you</h3>\n        </ion-item>\n    </ion-list>\n    <ion-list>\n        <ion-list-header>\n            UX/UI\n        </ion-list-header>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot2.jpg">\n            </ion-avatar>\n            <h2>Han</h2>\n            <h3>Look, kid...</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot3.jpg">\n            </ion-avatar>\n            <h2>Rey</h2>\n            <h3>I can handle myself</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot4.jpg">\n            </ion-avatar>\n            <h2>Luke</h2>\n            <h3>Your thoughts betray you</h3>\n        </ion-item>\n    </ion-list>\n\n    <ion-list>\n        <ion-list-header>\n            Developement\n        </ion-list-header>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot1.jpg">\n            </ion-avatar>\n            <h2>Finn</h2>\n            <h3>I\'m a big deal</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot3.jpg">\n            </ion-avatar>\n            <h2>Rey</h2>\n            <h3>I can handle myself</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot4.jpg">\n            </ion-avatar>\n            <h2>Luke</h2>\n            <h3>Your thoughts betray you</h3>\n        </ion-item>\n    </ion-list>\n\n\n    <ion-list>\n        <ion-list-header>\n            Business Analysis / Project Management\n        </ion-list-header>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot1.jpg">\n            </ion-avatar>\n            <h2>Finn</h2>\n            <h3>I\'m a big deal</h3>\n        </ion-item>\n\n        <ion-item>\n            <ion-avatar item-start>\n                <img src="assets/Headshots/headshot2.jpg">\n            </ion-avatar>\n            <h2>Han</h2>\n            <h3>Look, kid...</h3>\n        </ion-item>\n\n    </ion-list>\n\n\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/speakers/speakers.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SpeakersPage);
@@ -75159,7 +75193,7 @@ var SponsorsPage = (function () {
 }());
 SponsorsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-sponsors',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sponsors/sponsors.html"*/'<ion-content>\n    Sponsors\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sponsors/sponsors.html"*/
+        selector: 'page-sponsors',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sponsors/sponsors.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Sponsors\n        </ion-title>\n    </ion-navbar>\n</ion-header>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/sponsors/sponsors.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SponsorsPage);
@@ -112611,6 +112645,76 @@ function toSubscriber(nextOrObserver, error, complete) {
 }
 exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
+
+/***/ }),
+/* 271 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SurveyPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SurveyPage = (function () {
+    function SurveyPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return SurveyPage;
+}());
+SurveyPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-survey',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/survey/survey.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Survey\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/survey/survey.html"*/
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object])
+], SurveyPage);
+
+var _a;
+//# sourceMappingURL=survey.js.map
+
+/***/ }),
+/* 272 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SettingsPage = (function () {
+    function SettingsPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return SettingsPage;
+}());
+SettingsPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-settings',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/settings/settings.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Settings\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/settings/settings.html"*/
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object])
+], SettingsPage);
+
+var _a;
+//# sourceMappingURL=settings.js.map
 
 /***/ })
 /******/ ]);

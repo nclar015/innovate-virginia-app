@@ -1,0 +1,28 @@
+$facebookBlue: #3b5998;
+$twitterBlue: #0084b4;
+$instagramYellow: #fccc63;
+ion-icon {
+    font-size: 6em;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+ion-content {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.facebookIcon {
+    color: $facebookBlue;
+}
+
+.twitterIcon {
+    color: $twitterBlue;
+}
+
+.instagramIcon {
+    color: $instagramYellow;
+}

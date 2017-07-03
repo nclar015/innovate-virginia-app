@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SessionsPage } from '../pages/sessions/sessions';
+import { SurveyPage } from '../pages/survey/survey';
+import { SettingsPage } from '../pages/settings/settings';
 import { RoomsPage } from '../pages/rooms/rooms';
 import { SpeakersPage } from '../pages/speakers/speakers';
 import { SocialPage } from '../pages/social/social';
@@ -25,10 +27,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     SchedulePage,
     SessionsPage,
+    SurveyPage,
     RoomsPage,
     LocationPage,
     SponsorsPage,
     SpeakersPage,
+    SettingsPage,
+    SurveyPage,
     SocialPage,
     HomePage,
     TabsPage
@@ -44,10 +49,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     SchedulePage,
     SessionsPage,
+    SurveyPage,
     RoomsPage,
     LocationPage,
     SponsorsPage,
     SpeakersPage,
+    SettingsPage,
+    SurveyPage,
     SocialPage,
     HomePage,
     TabsPage
