@@ -6,6 +6,60 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="outer-content">
+    <h2>
+        Filter By Category
+    </h2>
+    <ion-item>
+        <ion-label>Category</ion-label>
+        <ion-select [(ngModel)]="track">
+            <ion-option value="All">All</ion-option>
+            <ion-option value="1">Agile Coaching</ion-option>
+            <ion-option value="2">Agile In Hardware</ion-option>
+            <ion-option value="3">Agile Methods</ion-option>
+            <ion-option value="4">Break</ion-option>
+            <ion-option value="5">DevOps/Testing</ion-option>
+            <ion-option value="6">Innovation Games</ion-option>
+            <ion-option value="7">Keynote</ion-option>
+            <ion-option value="8">Leadership</ion-option>
+            <ion-option value="9">Reception</ion-option>
+            <ion-option value="10">Requirements/Metrics</ion-option>
+            <ion-option value="11">UX/Design</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-list>
+        <ion-list-header>
+            8:00 am - 9:15 am
+        </ion-list-header>
+        <button ion-item>
+            <ion-avatar item-start>
+                <img src="assets/Headshots/headshot1.jpg">
+            </ion-avatar>
+            <h2>KEYNOTE: ESSENTIAL PRODUCT OWNERSHIP: IT TAKES A VILLAGE</h2>
+            <h3>Bob Galen</h3>
+            <h3>Henrico Ballroom A/B Combined</h3>
+        </button>
+        <ion-list-header>
+            9:15 am - 9:30 am
+        </ion-list-header>
+        <button ion-item>
+            <ion-avatar item-start>
+                <img src=""/>
+            </ion-avatar>
+            <h2>Break</h2>
+            <h3>Sponsor Expo</h3>
+        </button>
+        <ion-list-header>
+            9:30 am - 10:30 am
+        </ion-list-header>
+        <button ion-item *ngFor="let session of sessionData.sessions">
+            <ion-avatar item-start>
+                <img src="assets/Headshots/headshot1.jpg">
+            </ion-avatar>
+            <h2>{{ session.title }}</h2>
+            <h3>{{ session.speaker }}</h3>
+            <h3>{{ session.room }}</h3>
+        </button>
+    </ion-list>
 
 </ion-content>

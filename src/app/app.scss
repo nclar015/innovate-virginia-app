@@ -46,7 +46,7 @@ h1 {
 
 h2 {
     color: $innovateBlue;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
     font-weight: 300;
 }
@@ -93,4 +93,8 @@ a {
     margin-top: 0;
     margin-bottom: 5px;
     min-height: 10px;
+}
+
+.list-ios {
+    margin: 10px 0;
 }
