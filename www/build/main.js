@@ -56385,7 +56385,7 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/about/about.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            About\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content padding>\n    <h2>InnoVAte Virgnia</h2>\n    <p align="left">\n        InnoVAte Virginia is a unique one-day conference intended to promote the use of innovative methods of delivery such as Kanban, Lean and Agile. Sponsored by the Agile Richmond user group, our goal is to host an event that mixes great ideas, passionate\n        people and industry best practices in a unique and creative setting.\n    </p>\n    <p align="left">\n        Whether you’re a developer, project manager, UX designer, business systems analyst, part of QA or Operations, Innovate Virginia has something of interest for you, so bring your entire team! We’re showcasing the best and brightest in the industry and providing\n        you with an opportunity to learn from well-respected thought leaders, while networking and socializing with other progressive Agile professionals.\n    </p>\n    <p align="left">\n        Located at the beautiful Wyndham Virginia Crossings Hotel and Conference Center, we invite you to experience this unique, creative conference with us. We’re looking forward to learning from our experts, from each other, and having a little fun too!\n    </p>\n    <ion-item>\n        <h2>Brought To You By:</h2>\n        <img src="/assets/Logo/AgileRichmond-lgo2.png" />\n    </ion-item>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/about/about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], AboutPage);
@@ -56585,7 +56585,7 @@ var SchedulePage = (function () {
 }());
 SchedulePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-schedule',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Schedule\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/
+        selector: 'page-schedule',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            My Schedule\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/schedule/schedule.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SchedulePage);
@@ -56728,7 +56728,7 @@ var SocialPage = (function () {
 }());
 SocialPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-social',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Social\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Social Media</ion-list-header>\n        <ion-item>\n            <ion-icon name="logo-twitter" item-left></ion-icon>\n            @agileRichmond\n        </ion-item>\n        <ion-item>\n            <ion-icon name="logo-facebook" item-left></ion-icon>\n            /AgileRichmond\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/
+        selector: 'page-social',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Social\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n        <ion-list-header>Follow us on Social Media</ion-list-header>\n        <button ion-item>\n            <ion-icon name="logo-twitter" item-left class="twitter-icon"></ion-icon>\n            @innovateva\n        </button>\n        <button ion-item>\n            <ion-icon name="logo-facebook" item-left class="facebook-icon"></ion-icon>\n            /innovateva\n        </button>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/social/social.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SocialPage);
@@ -56830,7 +56830,7 @@ var SurveyPage = (function () {
 }());
 SurveyPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-        selector: 'page-survey',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/survey/survey.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Survey\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/survey/survey.html"*/
+        selector: 'page-survey',template:/*ion-inline-start:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/survey/survey.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Survey\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <br>\n    <h2>Hope You Enjoyed InnoVAte Virginia!</h2>\n    <p>Would you mind completing a simple survey?</p>\n    <br>\n    <br>\n    <button ion-button color="primary" block>Start Survey</button>\n</ion-content>'/*ion-inline-end:"/Users/nclarke/Desktop/apps/InnovateVirginia/InnovateVirginia/src/pages/survey/survey.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], SurveyPage);

@@ -25272,8 +25272,29 @@ a {
   min-height: 10px;
 }
 
+.list-ios .item-block .item-inner {
+  border-bottom: none;
+}
+
+.item-ios.item-block .item-inner {
+  padding-right: 8px;
+  border-bottom: none;
+}
+
+.item-ios {
+  border-bottom: 1px solid #ededed;
+}
+
+.list-ios > .item-block:first-child {
+  border-top: none;
+}
+
+.list-ios > .item-block:last-child {
+  border-bottom: none;
+}
+
 .list-ios {
-  margin: 10px 0;
+  margin: 0 0 10px;
 }
 
 .home-content {
@@ -25310,11 +25331,11 @@ ion-content {
   display: block;
 }
 
-.facebookIcon {
+.facebook-icon {
   color: #3b5998;
 }
 
-.twitterIcon {
+.twitter-icon {
   color: #0084b4;
 }
 
