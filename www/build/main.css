@@ -25201,34 +25201,35 @@ ion-navbar.toolbar {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
 }
 
 .blue-header {
-  background: #1b4c8c;
+  background: rgba(27, 76, 140, 0.85);
   display: block;
-  margin: 0;
+  position: absolute;
+  bottom: 0;
   text-align: center;
-}
-
-.logo-header {
-  padding: 25px 0;
-  background: #f8f8f8;
+  width: 100%;
 }
 
 h1 {
   color: #fff;
-  font-size: 22px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 50px;
   margin: 0;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 h2 {
   color: #1b4c8c;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 30px;
   font-weight: 300;
+  width: 90%;
+  margin: 20px auto 10px;
+  display: block;
 }
 
 h3 {
@@ -25238,16 +25239,44 @@ h3 {
   margin-top: 0;
 }
 
+.logo-header {
+  padding: 50px 0 25px;
+  height: 220px;
+  position: relative;
+  background: url(https://www.incimages.com/uploaded_files/image/600x400/getty_486734270_245391.jpg);
+  background-size: 100%;
+  background-position: 0, 0;
+  background-repeat: no-repeat;
+}
+
 .logo-header img {
-  max-width: 70%;
+  max-width: 250px;
   height: auto;
-  margin: auto;
+  margin: 60px auto;
   display: block;
+}
+
+.white-med-opacity {
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+}
+
+button {
+  background: white;
 }
 
 a {
   text-decoration: none;
   text-align: center;
+}
+
+ion-icon {
+  color: #275692;
+  padding: 5px 10px;
 }
 
 .item-ios h2 {
@@ -25297,13 +25326,22 @@ a {
   margin: 0 0 10px;
 }
 
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: 20vh;
+}
+
 .home-content {
   text-align: center;
 }
 
 .home-icon {
   width: 32.5%;
-  padding: 20px 0;
+  padding: 18px 5px;
   margin: 0;
   display: inline-block;
   -webkit-box-shadow: none;
@@ -25315,6 +25353,47 @@ a {
   display: block;
   margin: auto;
   padding: 14px 0;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 20px 5px 0px;
+  display: inline-block;
+}
+
+ion-icon {
+  color: #275692;
+  padding: 5px 10px;
+}
+
+.clock {
+  font-size: 20px;
+  vertical-align: middle;
+  color: #275692;
+  padding: 5px 10px;
+}
+
+ion-card {
+  padding: 0;
+  width: 100%;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.white-icon {
+  padding: 0;
+  color: #fff;
+}
+
+.standard-blue {
+  background: #275692;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
 }
 
 ion-icon {

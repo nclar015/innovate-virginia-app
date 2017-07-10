@@ -34,4 +34,9 @@ export class HomePage {
   goToAnotherPage(pageName) {
     this.navCtrl.push(pageName);
   }
+
+  timeRemaining(){
+    var today = new Date('Sat Mar 24 2018 08:00:00 GMT-0400 (EDT)');
+    return today;
+  }
 }

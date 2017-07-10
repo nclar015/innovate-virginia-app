@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Speaker
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="outer-content">
+    <div class="profile-image">
+        <img [src]="speakerInfo.headshot" />
+    </div>
+    <h2>{{ speakerInfo.name }}</h2>
+    <ion-list>
+        <ion-list-header>
+            Career
+        </ion-list-header>
+        <ion-item>
+            <ion-icon ios="ios-card-outline" md="md-card" item-left text-wrap></ion-icon>
+            {{ speakerInfo.title }}
+        </ion-item>
+        <ion-item>
+            <ion-icon ios="ios-laptop-outline" md="md-laptop" item-left></ion-icon>
+            {{ speakerInfo.company }}
+        </ion-item>
+        <ion-list-header>
+            Contact
+        </ion-list-header>
+        <button ion-item>
+            <ion-icon ios="ios-mail-outline" md="md-mail" item-left></ion-icon>
+             {{ speakerInfo.email }}
+        </button>
+        <button ion-item>
+            <ion-icon ios="ios-logo-linkedin" md="md-logo" item-left></ion-icon>
+           {{ speakerInfo.linkedin }}
+        </button>
+        <ion-list-header>
+            Description
+        </ion-list-header>
+        <ion-item padding text-wrap>
+            {{ speakerInfo.description }}
+        </ion-item>
+    </ion-list>
+
+</ion-content>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SpeakerData } from '../../providers/speakers';
+import { SpeakerDetailPage } from '../speakerDetail/speakerDetail';
 
 @Component({
   selector: 'page-speakers',
@@ -7,8 +9,19 @@ import { NavController } from 'ionic-angular';
 })
 export class SpeakersPage {
 
-  constructor(public navCtrl: NavController) {
+    speakerDetailRoot = SpeakerDetailPage;
+
+  constructor(
+    public navCtrl: NavController,
+    public SpeakerData: SpeakerData
+    ) {
 
   }
 
+  speakers = this.SpeakerData.allSpeakers.speakers;
+
+  goToSpeaker(speaker) {
+    localStorage.setItem("speakerView",JSON.stringify(speaker));
+        this.navCtrl.push(this.speakerDetailRoot);
+  }
 }

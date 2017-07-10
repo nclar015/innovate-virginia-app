@@ -5,16 +5,16 @@
         </ion-title>
     </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content class="outer-content" padding>
     <ion-list>
         <ion-list-header>Follow us on Social Media</ion-list-header>
-        <button ion-item>
+        <button ion-item (click)="goToUrl('https://twitter.com/innovateva')">
             <ion-icon name="logo-twitter" item-left class="twitter-icon"></ion-icon>
             @innovateva
         </button>
-        <button ion-item>
+        <button ion-item (click)="goToUrl('https://www.facebook.com/events/1152552311451569/')">
             <ion-icon name="logo-facebook" item-left class="facebook-icon"></ion-icon>
-            /innovateva
+            Innovate Virginia - Facebook Event
         </button>
     </ion-list>
 </ion-content>

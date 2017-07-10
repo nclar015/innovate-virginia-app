@@ -1,48 +1,51 @@
 <ion-content>
     <div class="logo-header">
-        <img src="/assets/Logo/IVALogo.png" />
+        <div class="white-med-opacity">
+            <img src="assets/Logo/IVALogo.png" />
+        </div>
+        <div class="blue-header">
+            <h1>
+                {{ timeRemaining() | date: 'EEEE - MMM d, y' }}
+            </h1>
+        </div>
     </div>
-    <div class="blue-header">
-        <h1>
-            2018 Conference
-        </h1>
-    </div>
+
     <div class="home-content">
-        <ion-card class="home-icon" (click)="goToAnotherPage(sessionsRoot)">
-            <img src="/assets/HomePageIcons/icons8-Training-80.png" />
+        <button ion-card class="home-icon" (click)="goToAnotherPage(sessionsRoot)">
+            <img src="assets/HomePageIcons/icons8-Training-80.png" />
             <h3>Sessions</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(speakersRoot)">
-            <img src="/assets/HomePageIcons/icons8-Podium With Speaker-80.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(speakersRoot)">
+            <img src="assets/HomePageIcons/icons8-Podium With Speaker-80.png" />
             <h3>Speakers</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(surveyRoot)">
-            <img src="/assets/HomePageIcons/icons8-Survey-80.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(surveyRoot)">
+            <img src="assets/HomePageIcons/icons8-Survey-80.png" />
             <h3>Survey</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(locationRoot)">
-            <img src="/assets/HomePageIcons/icons8-Location-80.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(locationRoot)">
+            <img src="assets/HomePageIcons/icons8-Location-80.png" />
             <h3>Location</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(roomsRoot)">
-            <img src="/assets/HomePageIcons/icons8-Waypoint Map-80.png" />
-            <h3>Room Map</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(sponsorsRoot)">
-            <img src="/assets/HomePageIcons/icons8-Business-80.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(roomsRoot)">
+            <img src="assets/HomePageIcons/icons8-Waypoint Map-80.png" />
+            <h3>Room Map</h3> 
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(sponsorsRoot)">
+            <img src="assets/HomePageIcons/icons8-Business-80.png" />
             <h3>Sponsors</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(socialRoot)">
-            <img src="/assets/HomePageIcons/icons8-Facebook-100.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(socialRoot)">
+            <img src="assets/HomePageIcons/icons8-Facebook-100.png" />
             <h3>Social Media</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(aboutRoot)">
-            <img src="/assets/HomePageIcons/icons8-About-100.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(aboutRoot)">
+            <img src="assets/HomePageIcons/icons8-About-100.png" />
             <h3>About</h3>
-        </ion-card>
-        <ion-card class="home-icon" (click)="goToAnotherPage(contactRoot)">
-            <img src="/assets/HomePageIcons/icons8-Phone-80.png" />
+        </button>
+        <button ion-card class="home-icon" (click)="goToAnotherPage(contactRoot)">
+            <img src="assets/HomePageIcons/icons8-Phone-80.png" />
             <h3>Contact</h3>
-        </ion-card>
+        </button>
     </div>
 </ion-content>

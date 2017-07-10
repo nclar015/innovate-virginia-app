@@ -11,4 +11,7 @@ export class SocialPage {
 
   }
 
+  goToUrl(url){
+    window.open(url);
+  }
 }

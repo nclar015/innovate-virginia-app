@@ -5,5 +5,30 @@
         </ion-title>
     </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-content class="outer-content">
+
+    <img src="assets/Images/maps-image.png" />
+    <button ion-item (click)="googleMapsWyndham()">
+        <h2>Wyndham Village Crossings</h2>
+        <h3>Open In Google Maps</h3>
+        </button>
+    <button ion-item (click)="goToAnotherPage(roomsRoot)">
+        <h2>View Rooms Map</h2>
+        </button>
+    <br>
+    <ion-list>
+        <ion-list-header>More Information</ion-list-header>
+        <button ion-item (click)="callWyndham()">
+            <ion-icon ios="ios-call-outline"  md="md-call" item-left></ion-icon>
+            (804)-804-8004
+        </button>
+        <button ion-item text-wrap (click)="googleMapsWyndham()">
+            <ion-icon ios="ios-navigate-outline" md="md-navigate" item-left></ion-icon>
+            1000 Virginia Center Pkwy, Glen Allen, VA 23059
+        </button>
+        <button ion-item (click)="wyndhamHotel()">
+            <ion-icon ios="ios-exit-outline" md="md-exit" item-left ></ion-icon>
+            wyndhamhotels.com
+        </button>
+    </ion-list>
 </ion-content>

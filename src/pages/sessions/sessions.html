@@ -1,35 +1,146 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Sessions
+            All Sessions
         </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="outer-content">
-    <h2>
+    <!--<h2>
         Filter By Category
     </h2>
     <ion-item>
         <ion-label>Category</ion-label>
         <ion-select [(ngModel)]="track">
             <ion-option value="All">All</ion-option>
-            <ion-option value="1">Agile Coaching</ion-option>
-            <ion-option value="2">Agile In Hardware</ion-option>
-            <ion-option value="3">Agile Methods</ion-option>
-            <ion-option value="4">Break</ion-option>
-            <ion-option value="5">DevOps/Testing</ion-option>
-            <ion-option value="6">Innovation Games</ion-option>
-            <ion-option value="7">Keynote</ion-option>
-            <ion-option value="8">Leadership</ion-option>
-            <ion-option value="9">Reception</ion-option>
-            <ion-option value="10">Requirements/Metrics</ion-option>
-            <ion-option value="11">UX/Design</ion-option>
+            <ion-option value="Agile Coaching">Agile Coaching</ion-option>
+            <ion-option value="Agile In Hardware">Agile In Hardware</ion-option>
+            <ion-option value="Agile Methods">Agile Methods</ion-option>
+            <ion-option value="Break">Break</ion-option>
+            <ion-option value="DevOps/Testing">DevOps/Testing</ion-option>
+            <ion-option value="Innovation Games">Innovation Games</ion-option>
+            <ion-option value="KeyNote">Keynote</ion-option>
+            <ion-option value="Leadership">Leadership</ion-option>
+            <ion-option value="Reception">Reception</ion-option>
+            <ion-option value="Requrirements/Metrics">Requirements/Metrics</ion-option>
+            <ion-option value="UX/Design">UX/Design</ion-option>
         </ion-select>
-    </ion-item>
+
+    </ion-item>-->
     <ion-list>
         <ion-list-header>
             8:00 am - 9:15 am
+        </ion-list-header>
+        <button ion-item *ngFor="let keynote of keynotes" (click)="goToSession(keynote)">
+            <ion-avatar item-start>
+                <img [src]="keynote.image[0]">
+                <div ion-avatar *ngIf="keynote.image[1]" style="margin-top: 5px">
+                    <img [src]="keynote.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ keynote.title }}</h2>
+            <h3>{{ keynote.speakers[0] }}</h3>
+            <h3 *ngIf="keynote.speakers[1]">{{ keynote.speakers[1] }}</h3>
+            <p>{{ keynote.room }}</p>
+        </button>
+        <ion-list-header>
+            9:15 am - 9:30 am
+        </ion-list-header>
+        <ion-item>
+            <h2>Break</h2>
+            <h3>Sponsor Expo</h3>
+        </ion-item>
+        <ion-list-header>
+            9:30 am - 10:30 am
+        </ion-list-header>
+        <button ion-item *ngFor="let session of sessions" (click)="goToSession(session)">
+            <ion-avatar item-start>
+                <img [src]="session.image[0]">
+                <div ion-avatar *ngIf="session.image[1]" style="margin-top: 5px">
+                    <img [src]="session.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ session.title }}</h2>
+            <h3>{{ session.speakers[0] }}</h3>
+            <h3 *ngIf="session.speakers[1]">{{ session.speakers[1] }}</h3>
+                        <p>{{ session.room }}</p>
+        </button>
+        <ion-list-header>
+            10:30 am - 10:45 am
+        </ion-list-header>
+        <ion-item>
+            <h2>Break</h2>
+            <h3>Sponsor Expo</h3>
+        </ion-item>
+        <ion-list-header>
+            10:45 am - 11:45 am
+        </ion-list-header>
+        <button ion-item *ngFor="let session of sessions" (click)="goToSession(session)">
+            <ion-avatar item-start>
+                <img [src]="session.image[0]">
+                <div ion-avatar *ngIf="session.image[1]">
+                    <img [src]="session.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ session.title }}</h2>
+            <h3>{{ session.speakers[0] }}</h3>
+            <h3 *ngIf="session.speakers[1]">{{ session.speakers[1] }}</h3>
+                                    <p>{{ session.room }}</p>
+        </button>
+        <ion-list-header>
+            11:45 am - 1:00 pm
+        </ion-list-header>
+        <ion-item>
+            <h2>Lunch Buffet Provided</h2>
+            <h3>The Glen Restaurant</h3>
+        </ion-item>
+        <ion-list-header>
+            1:00 pm - 2:00 pm
+        </ion-list-header>
+        <button ion-item *ngFor="let session of sessions" (click)="goToSession(session)">
+            <ion-avatar item-start>
+                <img [src]="session.image[0]">
+                <div ion-avatar *ngIf="session.image[1]">
+                    <img [src]="session.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ session.title }}</h2>
+            <h3>{{ session.speakers[0] }}</h3>
+            <h3 *ngIf="session.speakers[1]">{{ session.speakers[1] }}</h3>
+                                    <p>{{ session.room }}</p>
+        </button>
+        <ion-list-header>
+            2:00 pm - 2:15 pm
+        </ion-list-header>
+        <ion-item>
+            <h2>Break</h2>
+            <h3>Sponsor Expo</h3>
+        </ion-item>
+        <ion-list-header>
+            2:15 pm - 3:15 pm
+        </ion-list-header>
+        <button ion-item *ngFor="let session of sessions" (click)="goToSession(session)">
+            <ion-avatar item-start>
+                <img [src]="session.image[0]">
+                <div ion-avatar *ngIf="session.image[1]">
+                    <img [src]="session.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ session.title }}</h2>
+            <h3>{{ session.speakers[0] }}</h3>
+            <h3 *ngIf="session.speakers[1]">{{ session.speakers[1] }}</h3>
+                                    <p>{{ session.room }}</p>
+        </button>
+        <ion-list-header>
+            3:15 pm - 3:30 pm
+        </ion-list-header>
+        <ion-item>
+            <h2>Break</h2>
+            <h3>Sponsor Expo</h3>
+        </ion-item>
+        <ion-list-header>
+            3:30 pm - 4:45 pm
         </ion-list-header>
         <button ion-item>
             <ion-avatar item-start>
@@ -40,26 +151,13 @@
             <h3>Henrico Ballroom A/B Combined</h3>
         </button>
         <ion-list-header>
-            9:15 am - 9:30 am
+            4:45 pm - 6:00 pm
         </ion-list-header>
-        <button ion-item>
-            <ion-avatar item-start>
-                <img src=""/>
-            </ion-avatar>
-            <h2>Break</h2>
+        <ion-item>
+            <h2>Cocktail Reception / Prize Giveaway</h2>
             <h3>Sponsor Expo</h3>
-        </button>
-        <ion-list-header>
-            9:30 am - 10:30 am
-        </ion-list-header>
-        <button ion-item *ngFor="let session of sessionData.sessions">
-            <ion-avatar item-start>
-                <img src="assets/Headshots/headshot1.jpg">
-            </ion-avatar>
-            <h2>{{ session.title }}</h2>
-            <h3>{{ session.speaker }}</h3>
-            <h3>{{ session.room }}</h3>
-        </button>
+        </ion-item>
+        <br>
     </ion-list>
 
 </ion-content>
