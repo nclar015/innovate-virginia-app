@@ -20,7 +20,8 @@ export class SessionsPage {
     track: string = "All";
     inSession: any;
     sessions = this.SessionData.allSessions.sessions;
-    keynotes = this.SessionData.allSessions.keynote;
+    openingKeynotes = this.SessionData.allSessions.openingKeynote;
+    closingKeynotes = this.SessionData.allSessions.closingKeynote;
    
     goToSession(sessionInfo) {
         localStorage.setItem("sessionView",JSON.stringify(sessionInfo));

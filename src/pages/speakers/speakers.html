@@ -11,7 +11,7 @@
             Key Note
         </ion-list-header>
         <button ion-item *ngFor="let speaker of speakers.keyNote" (click)="goToSpeaker(speaker)">
-            <ion-avatar item-start>
+            <ion-avatar item-start class="headshot">
                 <img [src]="speaker.headshot">
             </ion-avatar>
             <h2>{{ speaker.name }}</h2>
@@ -24,7 +24,7 @@
             Agile Transformation
         </ion-list-header>
         <button ion-item *ngFor="let speaker of speakers.agileTransformation" (click)="goToSpeaker(speaker)">
-            <ion-avatar item-start>
+            <ion-avatar item-start class="headshot">
                 <img [src]="speaker.headshot">
             </ion-avatar>
             <h2>{{ speaker.name }}</h2>
@@ -38,7 +38,7 @@
         </ion-list-header>
 
         <button ion-item *ngFor="let speaker of speakers.ux" (click)="goToSpeaker(speaker)">
-            <ion-avatar item-start>
+            <ion-avatar item-start class="headshot">
                 <img [src]="speaker.headshot">
             </ion-avatar>
             <h2>{{ speaker.name }}</h2>
@@ -52,7 +52,7 @@
         </ion-list-header>
 
         <button ion-item *ngFor="let speaker of speakers.devOps" (click)="goToSpeaker(speaker)">
-            <ion-avatar item-start>
+            <ion-avatar item-start class="headshot">
                 <img [src]="speaker.headshot">
             </ion-avatar>
             <h2>{{ speaker.name }}</h2>
@@ -68,7 +68,7 @@
         </ion-list-header>
 
         <button ion-item *ngFor="let speaker of speakers.businessAnalysis" (click)="goToSpeaker(speaker)">
-            <ion-avatar item-start>
+            <ion-avatar item-start class="headshot">
                 <img [src]="speaker.headshot">
             </ion-avatar>
             <h2>{{ speaker.name }}</h2>

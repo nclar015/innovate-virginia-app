@@ -11,4 +11,12 @@ export class SettingsPage {
 
   }
 
+  emptySchedule() {
+    localStorage.removeItem("firstSlot");
+    localStorage.removeItem("secondSlot");
+    localStorage.removeItem("thirdSlot");
+    localStorage.removeItem("fourthSlot");
+    console.log(localStorage.getItem("firstSlot"));
+  }
+
 }

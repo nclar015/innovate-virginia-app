@@ -6,9 +6,9 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="outer-content" padding>
     <h2>Your Personal Settings</h2>
-    <button ion-item>
+    <button ion-item (click)="emptySchedule()">
      <ion-icon ios="ios-calendar-outline" md="md-calendar" item-left></ion-icon>
             Empty Schedule
     </button>

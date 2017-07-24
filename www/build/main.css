@@ -25233,7 +25233,7 @@ h2 {
 }
 
 h3 {
-  color: #333;
+  color: #073B4C;
   font-size: 16px;
   line-height: 16px;
   margin-top: 0;
@@ -25279,11 +25279,25 @@ ion-icon {
   padding: 5px 10px;
 }
 
+.item-ios ion-avatar {
+  min-width: 36px;
+  min-height: 36px;
+  vertical-align: middle;
+}
+
 .item-ios h2 {
   margin: 0 0 2px;
   line-height: 2rem;
   font-size: 1.7rem;
   font-weight: normal;
+}
+
+.item-ios ion-avatar[item-left],
+.item-ios ion-thumbnail[item-left],
+.item-ios ion-avatar[item-start],
+.item-ios ion-thumbnail[item-start] {
+  margin: 8px 16px 8px 0;
+  vertical-align: middle;
 }
 
 .tabs-ios .tab-button-icon {
@@ -25312,6 +25326,7 @@ ion-icon {
 
 .item-ios {
   border-bottom: 1px solid #ededed;
+  vertical-align: middle;
 }
 
 .list-ios > .item-block:first-child {
@@ -25329,6 +25344,14 @@ ion-icon {
 .tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text {
   margin-top: 0px;
   margin-bottom: 5px;
+}
+
+.headshot {
+  vertical-align: middle;
+}
+
+.list-md .item-block .item-inner {
+  border-bottom: none;
 }
 
 textarea {
@@ -25353,6 +25376,13 @@ textarea {
   display: block;
   margin: auto;
   padding: 14px 0;
+}
+
+h3 {
+  color: #073B4C;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 0;
 }
 
 .profile-image {
@@ -25391,6 +25421,13 @@ ion-card {
 
 .standard-blue {
   background: #275692;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+}
+
+.standard-grey {
+  background: #bdbdbd;
   color: #fff;
   display: block;
   margin: 20px auto;

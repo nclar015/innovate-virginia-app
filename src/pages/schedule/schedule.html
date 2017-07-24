@@ -12,7 +12,7 @@
         <ion-list-header>
             8:00 am - 9:15 am
         </ion-list-header>
-        <button ion-item *ngFor="let keynote of keynotes" (click)="goToSession(keynote)">
+        <button ion-item *ngFor="let keynote of openingKeynotes" (click)="goToSession(keynote)">
             <ion-avatar item-start>
                 <img [src]="keynote.image[0]">
                 <div ion-avatar *ngIf="keynote.image[1]" style="margin-top: 5px">
@@ -34,9 +34,21 @@
         <ion-list-header>
             9:30 am - 10:30 am
         </ion-list-header>
-        <button ion-item>
+        <button ion-item *ngIf="this.noSessionFirstSlot" (click)="goToAllSessions()">
             <ion-icon ios="ios-add-circle-outline" md="md-add-circle" item-left></ion-icon>
             Add A Session
+        </button>
+        <button ion-item *ngIf="!this.noSessionFirstSlot" (click)="goToSession(this.firstSession)">
+            <ion-avatar item-start class="headshot">
+                <img [src]="this.firstSession.image[0]">
+                <div ion-avatar *ngIf="this.firstSession.image[1]" style="margin-top: 5px">
+                    <img [src]="this.firstSession.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ this.firstSession.title }}</h2>
+            <h3>{{ this.firstSession.speakers[0] }}</h3>
+            <h3 *ngIf="this.firstSession.speakers[1]">{{ this.firstSession.speakers[1] }}</h3>
+                                    <p>{{ this.firstSession.room }}</p>
         </button>
         <ion-list-header>
             10:30 am - 10:45 am
@@ -48,9 +60,21 @@
         <ion-list-header>
             10:45 am - 11:45 am
         </ion-list-header>
-        <button ion-item>
-            <ion-icon ios="ios-add-circle-outline" md="md-add-circle"  item-left></ion-icon>
+        <button ion-item *ngIf="this.noSessionSecondSlot" (click)="goToAllSessions()">
+            <ion-icon ios="ios-add-circle-outline" md="md-add-circle" item-left></ion-icon>
             Add A Session
+        </button>
+        <button ion-item *ngIf="!this.noSessionSecondSlot" (click)="goToSession(this.secondSession)">
+            <ion-avatar item-start class="headshot">
+                <img [src]="this.secondSession.image[0]">
+                <div ion-avatar *ngIf="this.secondSession.image[1]" style="margin-top: 5px">
+                    <img [src]="this.secondSession.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ this.secondSession.title }}</h2>
+            <h3>{{ this.secondSession.speakers[0] }}</h3>
+            <h3 *ngIf="this.secondSession.speakers[1]">{{ this.secondSession.speakers[1] }}</h3>
+                                    <p>{{ this.secondSession.room }}</p>
         </button>
         <ion-list-header>
             11:45 am - 1:00 pm
@@ -62,9 +86,21 @@
         <ion-list-header>
             1:00 pm - 2:00 pm
         </ion-list-header>
-        <button ion-item>
-            <ion-icon ios="ios-add-circle-outline" md="md-add-circle"  item-left></ion-icon>
+        <button ion-item *ngIf="this.noSessionThirdSlot" (click)="goToAllSessions()">
+            <ion-icon ios="ios-add-circle-outline" md="md-add-circle" item-left></ion-icon>
             Add A Session
+        </button>
+        <button ion-item *ngIf="!this.noSessionThirdSlot" (click)="goToSession(this.thirdSession)">
+            <ion-avatar item-start class="headshot">
+                <img [src]="this.thirdSession.image[0]">
+                <div ion-avatar *ngIf="this.thirdSession.image[1]" style="margin-top: 5px">
+                    <img [src]="this.thirdSession.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ this.thirdSession.title }}</h2>
+            <h3>{{ this.thirdSession.speakers[0] }}</h3>
+            <h3 *ngIf="this.thirdSession.speakers[1]">{{ this.thirdSession.speakers[1] }}</h3>
+                                    <p>{{ this.thirdSession.room }}</p>
         </button>
         <ion-list-header>
             2:00 pm - 2:15 pm
@@ -76,9 +112,21 @@
         <ion-list-header>
             2:15 pm - 3:15 pm
         </ion-list-header>
-        <button ion-item>
+        <button ion-item *ngIf="this.noSessionFourthSlot" (click)="goToAllSessions()">
             <ion-icon ios="ios-add-circle-outline" md="md-add-circle" item-left></ion-icon>
             Add A Session
+        </button>
+        <button ion-item *ngIf="!this.noSessionFourthSlot" (click)="goToSession(this.fourthSession)">
+            <ion-avatar item-start class="headshot">
+                <img [src]="this.fourthSession.image[0]">
+                <div ion-avatar *ngIf="this.fourthSession.image[1]" style="margin-top: 5px">
+                    <img [src]="this.fourthSession.image[1]"/>
+                </div>
+            </ion-avatar>
+            <h2>{{ this.fourthSession.title }}</h2>
+            <h3>{{ this.fourthSession.speakers[0] }}</h3>
+            <h3 *ngIf="this.fourthSession.speakers[1]">{{ this.fourthSession.speakers[1] }}</h3>
+                                    <p>{{ this.fourthSession.room }}</p>
         </button>
         <ion-list-header>
             3:15 pm - 3:30 pm
@@ -90,13 +138,17 @@
         <ion-list-header>
             3:30 pm - 4:45 pm
         </ion-list-header>
-        <button ion-item>
+        <button ion-item *ngFor="let keynote of closingKeynotes" (click)="goToSession(keynote)">
             <ion-avatar item-start>
-                <img src="assets/Headshots/headshot1.jpg">
+                <img [src]="keynote.image[0]">
+                <div ion-avatar *ngIf="keynote.image[1]" style="margin-top: 5px">
+                    <img [src]="keynote.image[1]"/>
+                </div>
             </ion-avatar>
-            <h2>KEYNOTE: ESSENTIAL PRODUCT OWNERSHIP: IT TAKES A VILLAGE</h2>
-            <h3>Bob Galen</h3>
-            <h3>Henrico Ballroom A/B Combined</h3>
+            <h2>{{ keynote.title }}</h2>
+            <h3>{{ keynote.speakers[0] }}</h3>
+            <h3 *ngIf="keynote.speakers[1]">{{ keynote.speakers[1] }}</h3>
+            <p>{{ keynote.room }}</p>
         </button>
         <ion-list-header>
             4:45 pm - 6:00 pm
